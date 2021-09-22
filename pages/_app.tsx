@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import React, { useMemo } from "react";
 import { TinaCMS, TinaProvider } from "tinacms";
 import { useApollo } from "../apolloClient";
-import "../styles/globals.css";
+import "../styles/scss/style.scss";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const cms = useMemo(() => {
