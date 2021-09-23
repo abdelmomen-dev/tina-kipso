@@ -1,0 +1,14 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#f16101",
+    "titleBar.inactiveBackground": "#f16101",
+    "statusBar.background": "#f16101",
+    "activityBar.background": "#f16101",
+    "activityBar.activeBackground": "#f5bf9b",
+    "statusBar.foreground": "#ffffff"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.fontSize": 17
+}

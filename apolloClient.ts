@@ -9,10 +9,10 @@ function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === "undefined",
     link: new HttpLink({
-      uri: "https://graphnoco.loca.lt/nc/ahoda_OztU/v1/graphql", // Server URL (must be absolute)
+      uri: "https://caring-labrador-34.hasura.app/v1/graphql", // Server URL (must be absolute)
       headers: {
-        "xc-auth":
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiZGVsbW9tZW4xOTg1K24xQGdtYWlsLmNvbSIsImZpcnN0bmFtZSI6bnVsbCwibGFzdG5hbWUiOm51bGwsImlkIjoxLCJyb2xlcyI6InVzZXIiLCJpYXQiOjE2MzE5Nzc1MDB9.DP5vaE1OWGngknxK2eXTLtSMD3KCdoTyI6vo0-ESWhk",
+        "x-hasura-admin-secret":
+          "bzVu3Vj5YcCqqCMilt0oro4Dg1bWeMWVJQlazLaQiJRhxnfjFI2IdjHJjJzKaxug",
       }, // Additional fetch() options like `credentials` or `headers`
     }),
     cache: new InMemoryCache({

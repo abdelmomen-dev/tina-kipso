@@ -47,7 +47,7 @@ const CourseCatAlter = () => {
                   <i className="kipso-icon-desktop"></i>
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">IT & Software</a>
+                  <a href="#">تقنية المعلومات</a>
                 </h3>
               </div>
             </div>
@@ -57,7 +57,7 @@ const CourseCatAlter = () => {
                   <i className="kipso-icon-web-programming"></i>
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">Development</a>
+                  <a href="#">التطوير</a>
                 </h3>
               </div>
             </div>
@@ -67,7 +67,7 @@ const CourseCatAlter = () => {
                   <i className="kipso-icon-music-player"></i>
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">Music</a>
+                  <a href="#">الموسيقي</a>
                 </h3>
               </div>
             </div>
@@ -77,7 +77,7 @@ const CourseCatAlter = () => {
                   <i className="kipso-icon-camera"></i>
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">Photography</a>
+                  <a href="#">التصوير</a>
                 </h3>
               </div>
             </div>
@@ -87,7 +87,7 @@ const CourseCatAlter = () => {
                   <i className="kipso-icon-targeting"></i>
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">Marketing</a>
+                  <a href="#">التسويق</a>
                 </h3>
               </div>
             </div>
@@ -97,7 +97,7 @@ const CourseCatAlter = () => {
                   <i className="kipso-icon-health"></i>
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">Health & Fitness</a>
+                  <a href="#">الاسعافات الاولية</a>
                 </h3>
               </div>
             </div>
@@ -107,7 +107,7 @@ const CourseCatAlter = () => {
                   <i className="kipso-icon-desktop"></i>
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">IT & Software</a>
+                  <a href="#">تقنية المعلومات</a>
                 </h3>
               </div>
             </div>
@@ -117,7 +117,7 @@ const CourseCatAlter = () => {
                   <i className="kipso-icon-web-programming"></i>
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">Development</a>
+                  <a href="#">التطوير</a>
                 </h3>
               </div>
             </div>
@@ -127,7 +127,7 @@ const CourseCatAlter = () => {
                   <i className="kipso-icon-music-player"></i>
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">Music</a>
+                  <a href="#">الموسيقي</a>
                 </h3>
               </div>
             </div>
@@ -137,7 +137,7 @@ const CourseCatAlter = () => {
                   <i className="kipso-icon-camera"></i>
                 </div>
                 <h3 className="course-category-one__title">
-                  <a href="#">Photography</a>
+                  <a href="#">التصوير</a>
                 </h3>
               </div>
             </div>

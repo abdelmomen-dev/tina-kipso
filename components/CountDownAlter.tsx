@@ -13,10 +13,9 @@ const CountDownAlter = () => {
                 احصل علي دورات مجانية عند التسجيل الان
               </p>
               <p className="countdown-one__text">
-                Lorem ipsum gravida nibh vel velit auctor aliquetnean
-                sollicitudin, lorem quis bibendum auci elit consequat is simply
-                free text available in the psutis sem nibh id eis sed odio sit
-                amet.
+                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
+                ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال
+                لوريم إيبسوم
               </p>
               <div className="countdown-one__list list-unstyled">
                 <Countdown date={Date.now() + 5000000000} />
@@ -35,15 +34,19 @@ const CountDownAlter = () => {
                 method="POST"
                 className="become-teacher__form-content contact-form-validated"
               >
-                <input type="text" placeholder="Your Name" name="name" />
-                <input type="text" placeholder="Email Address" name="email" />
-                <input type="text" placeholder="Phone Number" name="phone" />
-                <input type="text" placeholder="Comment" name="message" />
+                <input type="text" placeholder="الاسم" name="name" />
+                <input
+                  type="text"
+                  placeholder="البريد الالكتروني "
+                  name="email"
+                />
+                <input type="text" placeholder="رقم الهاتف " name="phone" />
+                <input type="text" placeholder="ملاحظات" name="message" />
                 <button
                   type="submit"
                   className="thm-btn become-teacher__form-btn"
                 >
-                  Apply For It
+                  سجل الان
                 </button>
               </form>
               <div className="result text-center"></div>

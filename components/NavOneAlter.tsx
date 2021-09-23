@@ -115,7 +115,7 @@ class NavOneAlter extends Component<{}, MyState> {
               <ul className=" navigation-box">
                 <li className="current">
                   <Link href="/">
-                    <a>Home</a>
+                    <a>الرئيسية</a>
                   </Link>
                   <ul className="sub-menu">
                     <li>
@@ -156,7 +156,7 @@ class NavOneAlter extends Component<{}, MyState> {
                   </ul>
                 </li>
                 <li>
-                  <a href="#">Pages</a>
+                  <a href="#">الصفحات</a>
                   <ul className="sub-menu">
                     <li>
                       <Link href="/about">
@@ -181,7 +181,7 @@ class NavOneAlter extends Component<{}, MyState> {
                   </ul>
                 </li>
                 <li>
-                  <a href="/courses">Courses</a>
+                  <a href="/courses">الدورات التدريبية</a>
                   <ul className="sub-menu">
                     <li>
                       <Link href="/courses">
@@ -197,7 +197,7 @@ class NavOneAlter extends Component<{}, MyState> {
                 </li>
                 <li>
                   <Link href="/teachers">
-                    <a>Teachers</a>
+                    <a>المدربين</a>
                   </Link>
                   <ul className="sub-menu">
                     <li>
@@ -219,7 +219,7 @@ class NavOneAlter extends Component<{}, MyState> {
                 </li>
                 <li>
                   <Link href="/news">
-                    <a>News</a>
+                    <a>اخبارنا</a>
                   </Link>
                   <ul className="sub-menu">
                     <li>
@@ -236,7 +236,7 @@ class NavOneAlter extends Component<{}, MyState> {
                 </li>
                 <li>
                   <Link href="/contact">
-                    <a>Contact</a>
+                    <a>اتصل بنا</a>
                   </Link>
                 </li>
               </ul>
