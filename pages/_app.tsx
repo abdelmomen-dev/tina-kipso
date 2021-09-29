@@ -6,9 +6,10 @@ import { useApollo } from "../apolloClient";
 import "../styles/scss/style.scss";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const isAdmin = true;
   const cms = useMemo(() => {
     return new TinaCMS({
-      enabled: process.env.NODE_ENV !== "production",
+      enabled: process.env.NODE_ENV !== "production" && isAdmin,
       toolbar: true,
       sidebar: true,
     });

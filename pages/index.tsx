@@ -11,11 +11,11 @@ import Layout from "../components/Layout";
 import NavOneAlter from "../components/NavOneAlter";
 import SliderOneAlter from "../components/SliderOneAlter";
 import Topbar from "../components/Topbar";
-import VideoTwoAlter from "../components/VideoTwoAlter";
+import VideoComponentWrapper from "../components/VideoComponentWrapper";
 import { parseMdFile } from "../helpers/markown";
 import { getAllProducts } from "../helpers/product";
 
-const Home: NextPage = ({ mdFile, products }: any) => {
+const Home: NextPage = ({ mdFile }: any) => {
   const [_, form] = useForm({
     initialValues: mdFile,
     id: mdFile.fileName,
@@ -34,8 +34,11 @@ const Home: NextPage = ({ mdFile, products }: any) => {
       <SliderOneAlter />
       <AboutTwoAlter />
       <CourseOne />
-      <VideoTwoAlter />
-      <CountDownAlter />
+      <VideoComponentWrapper
+        title="مع دورات اليقين التدريبية مهمتنا هي زيادة المعرفة للجميع"
+        innerTitle="بيشو"
+      />
+      <CountDownAlter tagline="احصل علي دورات مجانية عند التسجيل" />
       <CourseCatAlter />
       <FooterAlter />
       <div>
