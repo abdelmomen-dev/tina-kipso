@@ -27,7 +27,13 @@ const Home: NextPage = ({ mdFile }: any) => {
     },
     id: mdFile.fileName,
     label: mdFile.fileName,
-    fields: [],
+    fields: [
+      {
+        name: "innerTitle",
+        label: "ما هو",
+        component: "text",
+      },
+    ],
     onSubmit: (formState: any) => {
       console.log(formState);
       return;

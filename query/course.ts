@@ -8,6 +8,7 @@ export const COURSE = gql`
       lectures
       price
       created_at
+      media
       crs_category {
         title_ar
       }

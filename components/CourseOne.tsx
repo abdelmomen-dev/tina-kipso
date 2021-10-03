@@ -60,7 +60,7 @@ const CourseOne = () => {
                     <div className="item" key={course.id}>
                       <div className="course-one__single color-1">
                         <div className="course-one__image">
-                          <img src="/assets/images/course-1-1.jpg" alt="" />
+                          <img src={course?.media?.homeCover} alt="" />
                           <i className="far fa-heart"></i>
                         </div>
                         <div className="course-one__content">

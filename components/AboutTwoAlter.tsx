@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 export default function AboutTwoAlter() {
@@ -61,7 +61,7 @@ export default function AboutTwoAlter() {
           <div className="col-xl-6 d-flex justify-content-xl-end justify-content-sm-center">
             <div className="about-two__image">
               <span className="about-two__image-dots"></span>
-              <img src="/assets/images/about-1-1.jpg" alt="" />
+              <img src="/assets/images/circle.png" alt="" />
               <div className="about-two__count">
                 <div className="about-two__count-text">
                   ساعات التدريب
