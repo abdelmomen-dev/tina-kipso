@@ -34,6 +34,9 @@ a:visited {
 .thm-gray-bg {
   background-color: $thm-gray;
 }
+.zindex10 {
+  z-index: 10;
+}
 
 @media (min-width: 1200px) {
   .container {

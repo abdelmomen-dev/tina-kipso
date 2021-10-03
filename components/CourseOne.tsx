@@ -1,14 +1,12 @@
 import { useQuery } from "@apollo/client";
-import React, { useEffect } from "react";
 import Swiper from "react-id-swiper";
+import { InlineText } from "react-tinacms-inline";
 import "swiper/css/swiper.css";
 import { COURSE } from "../query/course";
 
 const CourseOne = () => {
   const { data } = useQuery(COURSE);
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
+
   const params = {
     slidesPerView: 3,
     loop: true,
@@ -44,7 +42,9 @@ const CourseOne = () => {
       <section className="course-one__top-title home-one">
         <div className="container">
           <div className="block-title mb-0">
-            <h2 className="block-title__title">الدورات التدريبية المتاحة</h2>
+            <h2 className="block-title__title">
+              <InlineText name="frontmatter.avilable" className="zindex10" />
+            </h2>
           </div>
         </div>
         <div className="course-one__top-title__curve"></div>
@@ -57,7 +57,7 @@ const CourseOne = () => {
               <Swiper {...params}>
                 {data &&
                   data.crs_course.map((course: any) => (
-                    <div className="item">
+                    <div className="item" key={course.id}>
                       <div className="course-one__single color-1">
                         <div className="course-one__image">
                           <img src="/assets/images/course-1-1.jpg" alt="" />
