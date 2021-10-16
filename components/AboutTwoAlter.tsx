@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CountUp from "react-countup";
+import { InlineTextarea } from "react-tinacms-inline";
 import VisibilitySensor from "react-visibility-sensor";
 export default function AboutTwoAlter() {
   const [startCounter, setStartCounter] = useState(false);
@@ -17,9 +18,7 @@ export default function AboutTwoAlter() {
             <div className="about-two__content">
               <div className="block-title text-right">
                 <h2 className="block-title__title">
-                  نرحب بكم مع ...
-                  <br />
-                  اليقين للبحث والتطوير
+                  <InlineTextarea name="welcomeSct.header" />
                 </h2>
               </div>
               <p className="about-two__text">

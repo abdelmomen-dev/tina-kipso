@@ -9,7 +9,7 @@ const Topbar = () => {
           </a>
         </div>
         <div className="topbar-one__right">
-          <a href="#">خول</a>
+          <a href="#">دخول</a>
           <a href="#">حساب جديد</a>
         </div>
       </div>

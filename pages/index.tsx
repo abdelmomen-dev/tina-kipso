@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { InlineForm, InlineText } from "react-tinacms-inline";
-import { FormOptions, useForm, usePlugin } from "tinacms";
+import { FormOptions, ScreenPlugin, useForm, usePlugin } from "tinacms";
 import AboutTwoAlter from "../components/AboutTwoAlter";
 import CountDownAlter from "../components/CountDownAlter";
 import CourseCatAlter from "../components/CourseCatAlter";
@@ -14,7 +14,22 @@ import VideoTwoAlter from "../components/VideoTwoAlter";
 import { parseMdFile } from "../helpers/markown";
 import { getAllProducts } from "../helpers/product";
 
+const ScreenPlugin1: ScreenPlugin<any> = {
+  name: "اعدادات الصفحة الرئيسية",
+  Component: () => <h1>Hello اعدادات</h1>,
+  Icon: () => <span>🌁</span>,
+  layout: "fullscreen",
+  __type: "screen",
+};
+const ScreenPlugin2: ScreenPlugin<any> = {
+  ...ScreenPlugin1,
+  name: "اعدادات الموقع",
+  Icon: () => <>📡</>,
+  Component: () => <h1>Hello Baby</h1>,
+};
 const Home: NextPage = ({ mdFile }: any) => {
+  //useScreenPlugin(screenPlugin);
+  //useScreenPlugin(screenPlugin2);
   const [_, form] = useForm({
     initialValues: {
       ...mdFile,
@@ -24,15 +39,21 @@ const Home: NextPage = ({ mdFile }: any) => {
         tagline: "احصل علي دورات مجانية عند التسجيل",
         header: "قم بالتسجيل الآن",
       },
+      welcomeSct: {
+        header: `نرحب بكم مع ...
+اليقين للبحث والتطوير`,
+      },
     },
     id: mdFile.fileName,
     label: mdFile.fileName,
     fields: [
+      /*
       {
         name: "innerTitle",
         label: "ما هو",
         component: "text",
       },
+      */
     ],
     onSubmit: (formState: any) => {
       console.log(formState);

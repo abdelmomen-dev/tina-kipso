@@ -1,5 +1,3 @@
-import React from "react";
-
 const FooterAlter = () => {
   function scrollTop() {
     window?.scrollTo(0, 0);
@@ -68,7 +66,7 @@ const FooterAlter = () => {
             </div>
             <div className="col-xl-4 col-lg-6 col-sm-12">
               <div className="footer-widget footer-widget__gallery">
-                <h2 className="footer-widget__title">Gallery</h2>
+                <h2 className="footer-widget__title">{`معرض الصور`}</h2>
                 <ul className="list-unstyled footer-widget__gallery-list">
                   <li>
                     <a href="#">
