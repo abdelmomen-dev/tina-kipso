@@ -31,18 +31,18 @@ $thm-text-color: #81868a;
 @mixin dropDownMenuBase(
   $selector: "sub-menu",
   $position_top: 100%,
-  $position_left: 0,
+  $position_right: 0,
   $right_align_position: 0
 ) {
   > .#{$selector} {
     position: absolute;
     top: $position_top;
-    left: $position_left;
+    right: $position_right;
     z-index: 911;
     float: left;
     min-width: 220px;
     padding: 0px 0px;
-    text-align: left;
+    text-align: right;
     list-style: none;
     background-color: $thm_black;
     background-clip: padding-box;

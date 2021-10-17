@@ -1,5 +1,5 @@
 import Countdown from "react-countdown";
-import { InlineText } from "react-tinacms-inline";
+import { InlineText, InlineTextarea } from "react-tinacms-inline";
 
 const CountDownAlter = () => {
   return (
@@ -15,9 +15,7 @@ const CountDownAlter = () => {
                 <InlineText name="countDownSct.tagline" />
               </p>
               <p className="countdown-one__text">
-                هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
-                ويُستخدم في صناعات المطابع ودور النشر. كان لوريم إيبسوم ولايزال
-                لوريم إيبسوم
+                <InlineTextarea name="countDownSct.subtext" />
               </p>
               <div className="countdown-one__list list-unstyled">
                 <Countdown date={Date.now() + 5000000000} />
@@ -39,7 +37,7 @@ const CountDownAlter = () => {
                 <input type="text" placeholder="الاسم" name="name" />
                 <input
                   type="text"
-                  placeholder="البريد الالكتروني "
+                  placeholder="البريد الالكتروني"
                   name="email"
                 />
                 <input type="text" placeholder="رقم الهاتف " name="phone" />

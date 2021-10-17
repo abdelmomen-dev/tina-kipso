@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { Component } from "react";
+import { Component } from "react";
 
 type MyState = {
   sticky: boolean;
@@ -117,7 +117,7 @@ class NavOneAlter extends Component<{}, MyState> {
                   <Link href="/">
                     <a>الرئيسية</a>
                   </Link>
-                  <ul className="sub-menu">
+                  <ul className="no-sub-menu">
                     <li>
                       <Link href="/">
                         <a>Home 01</a>
@@ -160,22 +160,22 @@ class NavOneAlter extends Component<{}, MyState> {
                   <ul className="sub-menu">
                     <li>
                       <Link href="/about">
-                        <a>About Page</a>
+                        <a>من نحن</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/gallery">
-                        <a>Gallery</a>
+                        <a>معرض الصور</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/pricing">
-                        <a>Pricing Plans</a>
+                        <a>خطط الاسعار</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/faq">
-                        <a>FAQ'S</a>
+                        <a>الاسئلة المتكررة</a>
                       </Link>
                     </li>
                   </ul>
@@ -199,7 +199,7 @@ class NavOneAlter extends Component<{}, MyState> {
                   <Link href="/teachers">
                     <a>المدربين</a>
                   </Link>
-                  <ul className="sub-menu">
+                  <ul className="no-sub-menu">
                     <li>
                       <Link href="/teachers">
                         <a>Teachers</a>
@@ -221,7 +221,7 @@ class NavOneAlter extends Component<{}, MyState> {
                   <Link href="/news">
                     <a>اخبارنا</a>
                   </Link>
-                  <ul className="sub-menu">
+                  <ul className="no-sub-menu">
                     <li>
                       <Link href="/news">
                         <a>News Page</a>

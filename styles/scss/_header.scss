@@ -136,7 +136,7 @@
     @include dropDownMenuBase(
       $selector: "sub-menu",
       $position_top: 100%,
-      $position_left: 0
+      $position_right: 0
     );
 
     &:hover {
@@ -153,7 +153,7 @@
       @include dropDownMenuBase(
         $selector: "sub-menu",
         $position_top: 0%,
-        $position_left: 100%,
+        $position_right: 100%,
         $right_align_position: 100%
       );
 

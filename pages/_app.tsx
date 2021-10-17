@@ -8,7 +8,7 @@ import "../styles/scss/style.scss";
 const TopDish = () => <span>📡</span>;
 
 const MainScreenPlugin: ScreenPlugin<any> = {
-  name: "اعدادات برمجية",
+  name: "اعدادات الموقع",
   Component: () => <h1>Hello اعدادات</h1>,
   Icon: () => <span>🌁</span>,
   layout: "popup",
@@ -50,7 +50,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const client = useApollo(pageProps.initialState);
   useEffect(() => {
     setTimeout(() => {
-      const plugin = cms.screens.find("اعدادات برمجية");
+      const plugin = cms.screens.find("اعدادات الموقع");
       // Currently can't triiger show screen
       console.log(plugin);
     }, 200);
