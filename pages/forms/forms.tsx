@@ -116,3 +116,35 @@ export const getTeachersForm = () => {
     },
   } as FormOptions<any, any>;
 };
+
+export const getContactusForm = () => {
+  const id = "contactus";
+  return {
+    id,
+    label: id,
+    initialValues: {
+      title: "اتصل بنا",
+    },
+    fields: [],
+    onSubmit: (formState: any) => {
+      console.log(formState);
+      return;
+    },
+  } as FormOptions<any, any>;
+};
+
+export const getNewsForm = () => {
+  const id = "news";
+  return {
+    id,
+    label: id,
+    initialValues: {
+      title: "اخبار دورات اليقين",
+    },
+    fields: [],
+    onSubmit: (formState: any) => {
+      console.log(formState);
+      return;
+    },
+  } as FormOptions<any, any>;
+};

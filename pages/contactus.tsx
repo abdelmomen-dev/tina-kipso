@@ -1,25 +1,23 @@
 import { GetStaticProps } from "next";
 import { InlineForm } from "react-tinacms-inline";
 import { useForm, usePlugin } from "tinacms";
-import CallToActionTeachers from "../components/CallToActionTeachers";
+import ContactAlter from "../components/ContactAlter";
 import FooterAlter from "../components/FooterAlter";
 import Layout from "../components/Layout";
 import NavOneAlter from "../components/NavOneAlter";
 import PageHeader from "../components/PageHeader";
-import TeachersAlter from "../components/TeachersAlter";
-import { getTeachersForm } from "./forms/forms";
+import { getContactusForm } from "./forms/forms";
 
-const TeachersPage = () => {
-  const [_, form] = useForm(getTeachersForm());
+const ContactUsPage = () => {
+  const [_, form] = useForm(getContactusForm());
   usePlugin(form);
   return (
     <>
       <InlineForm form={form}>
-        <Layout pageTitle="الدورات التدريبية … المعلمين">
+        <Layout pageTitle="الدورات التدريبية … اتصل بنا">
           <NavOneAlter />
           <PageHeader formID={form.id} />
-          <TeachersAlter />
-          <CallToActionTeachers />
+          <ContactAlter />
           <FooterAlter />
         </Layout>
       </InlineForm>
@@ -35,4 +33,4 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
   };
 };
 
-export default TeachersPage;
+export default ContactUsPage;

@@ -235,7 +235,7 @@ class NavOneAlter extends Component<{}, MyState> {
                   </ul>
                 </li>
                 <li>
-                  <Link href="/contact">
+                  <Link href="/contactus">
                     <a>اتصل بنا</a>
                   </Link>
                 </li>
