@@ -1,8 +1,6 @@
 import { gql } from "@apollo/client";
-import React from "react";
 import { initializeApollo } from "../../apolloClient";
 import { parseMdFile } from "../../helpers/markown";
-import { getAllProductSlugs } from "../../helpers/product";
 const Product = ({ mdFile, wind }: any) => {
   return (
     <>
@@ -45,13 +43,17 @@ export async function getStaticProps({ params }: any) {
     },
   };
 }
+
 export async function getStaticPaths() {
   return {
+    /*
     paths: getAllProductSlugs().map((slug) => ({
       params: {
         slug: slug.replace(".md", ""),
       },
     })),
+    */
+    paths: [],
     fallback: false,
   };
 }

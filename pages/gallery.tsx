@@ -2,11 +2,11 @@ import { GetStaticProps } from "next";
 import { InlineForm } from "react-tinacms-inline";
 import { useForm, usePlugin } from "tinacms";
 import FooterAlter from "../components/FooterAlter";
+import { getGalleryForm } from "../components/forms/forms";
 import GalleryAlter from "../components/GalleryAlter";
 import Layout from "../components/Layout";
 import NavOneAlter from "../components/NavOneAlter";
 import PageHeader from "../components/PageHeader";
-import { getGalleryForm } from "./forms/forms";
 
 const GalleryPage = () => {
   const [_, form] = useForm(getGalleryForm());

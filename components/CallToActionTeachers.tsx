@@ -11,7 +11,7 @@ export default function CallToActionTeachers() {
                 </span>
               </div>
               <div className="cta-two__content">
-                <h2 className="cta-two__title">Become an teacher</h2>
+                <h2 className="cta-two__title">سجل معنا كمدرب</h2>
                 <p className="cta-two__text">
                   There are many variations of passages of lore available but{" "}
                   <br /> the majority have suffered alteration in some form.
@@ -30,7 +30,7 @@ export default function CallToActionTeachers() {
                 </span>
               </div>
               <div className="cta-two__content">
-                <h2 className="cta-two__title">Join our community</h2>
+                <h2 className="cta-two__title">أنضم كـ طالب</h2>
                 <p className="cta-two__text">
                   There are many variations of passages of lore available but{" "}
                   <br /> the majority have suffered alteration in some form.

@@ -6,6 +6,7 @@ import CountDownAlter from "../components/CountDownAlter";
 import CourseCatAlter from "../components/CourseCatAlter";
 import CourseOne from "../components/CourseOne";
 import FooterAlter from "../components/FooterAlter";
+import { getHomeForm } from "../components/forms/forms";
 import Layout from "../components/Layout";
 import NavOneAlter from "../components/NavOneAlter";
 import SliderOneAlter from "../components/SliderOneAlter";
@@ -13,7 +14,6 @@ import Topbar from "../components/Topbar";
 import VideoTwoAlter from "../components/VideoTwoAlter";
 import { parseMdFile } from "../helpers/markown";
 import { getAllProducts } from "../helpers/product";
-import { getHomeForm } from "./forms/forms";
 
 const Home: NextPage = ({ mdFile }: any) => {
   /*

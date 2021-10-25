@@ -3,11 +3,11 @@ import { InlineForm } from "react-tinacms-inline";
 import { useForm, usePlugin } from "tinacms";
 import AboutOneAlter from "../components/AboutOneAlter";
 import FooterAlter from "../components/FooterAlter";
+import { getAboutForm } from "../components/forms/forms";
 import Layout from "../components/Layout";
 import NavOneAlter from "../components/NavOneAlter";
 import PageHeader from "../components/PageHeader";
 import TeamOneAlter from "../components/TeamOneAlter";
-import { getAboutForm } from "./forms/forms";
 const AboutPage = () => {
   const [_, form] = useForm(getAboutForm());
   usePlugin(form);

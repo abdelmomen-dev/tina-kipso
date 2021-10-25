@@ -3,10 +3,10 @@ import { InlineForm } from "react-tinacms-inline";
 import { useForm, usePlugin } from "tinacms";
 import ContactAlter from "../components/ContactAlter";
 import FooterAlter from "../components/FooterAlter";
+import { getContactusForm } from "../components/forms/forms";
 import Layout from "../components/Layout";
 import NavOneAlter from "../components/NavOneAlter";
 import PageHeader from "../components/PageHeader";
-import { getContactusForm } from "./forms/forms";
 
 const ContactUsPage = () => {
   const [_, form] = useForm(getContactusForm());
