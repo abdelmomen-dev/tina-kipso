@@ -1,5 +1,5 @@
 import { gql } from "@apollo/client";
-export const COURSE = gql`
+export const GET_COURSES = gql`
   query crs_course {
     crs_course {
       id

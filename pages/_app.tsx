@@ -23,7 +23,7 @@ const TopDishWidget = {
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const isAdmin = true;
+  const isAdmin = false;
   const cms = useMemo(() => {
     return new TinaCMS({
       enabled: process.env.NODE_ENV !== "production" && isAdmin,

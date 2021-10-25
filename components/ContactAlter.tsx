@@ -9,7 +9,7 @@ export default function ContactAlter() {
                 <div className="contact-info-one__icon">
                   <i className="kipso-icon-manager"></i>
                 </div>
-                <h2 className="contact-info-one__title">About Us </h2>
+                <h2 className="contact-info-one__title">من نحن </h2>
                 <p className="contact-info-one__text">
                   Lorem ipsum is simply free text <br /> available in the market
                   to use <br />
@@ -22,7 +22,7 @@ export default function ContactAlter() {
                 <div className="contact-info-one__icon">
                   <i className="kipso-icon-placeholder"></i>
                 </div>
-                <h2 className="contact-info-one__title">Our Address</h2>
+                <h2 className="contact-info-one__title">العنوان </h2>
                 <p className="contact-info-one__text">
                   855 Road Broklyn Street, <br />
                   600 New York, United States of <br /> America
@@ -34,9 +34,9 @@ export default function ContactAlter() {
                 <div className="contact-info-one__icon">
                   <i className="kipso-icon-contact"></i>
                 </div>
-                <h2 className="contact-info-one__title">Contact Info</h2>
+                <h2 className="contact-info-one__title">تواصل معنا</h2>
                 <p className="contact-info-one__text">
-                  needhelp@kipso.com <br />
+                  needhelp@alyaaqeen.com <br />
                   444 888 0000 <br /> &nbsp;
                 </p>
               </div>
@@ -48,8 +48,8 @@ export default function ContactAlter() {
       <section className="contact-one">
         <div className="container">
           <h2 className="contact-one__title text-center">
-            Get in touch <br />
-            with us
+            رأيك يهمنا <br />
+            ارسل لنا رسالة
           </h2>
           <form
             action="#"

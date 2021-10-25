@@ -2,10 +2,10 @@ import { useQuery } from "@apollo/client";
 import Swiper from "react-id-swiper";
 import { InlineText } from "react-tinacms-inline";
 import "swiper/css/swiper.css";
-import { COURSE } from "../query/course";
+import { GET_COURSES } from "../query/course";
 
 const CourseOne = () => {
-  const { data } = useQuery(COURSE);
+  const { data } = useQuery(GET_COURSES);
 
   const params = {
     slidesPerView: 3,
