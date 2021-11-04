@@ -1,7 +1,16 @@
-$thm-font: "Cairo", "Poppins";
+@font-face {
+  font-family: "Mazaj";
+  src: url("/assets/fonts/MazajBlack.ttf");
+}
+
+$thm-font: "Mazaj", "Cairo", "Poppins";
 $thm-font-two: "Satisfy";
+/*
 $thm-base-color: #f16101;
 $thm-base-color-2: #2da397;
+*/
+$thm-base-color: #9c794f;
+$thm-base-color-2: #5a6b47;
 $thm-black: #012237;
 $thm-gray: #f1f1f1;
 $thm-text-color: #81868a;

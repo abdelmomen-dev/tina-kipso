@@ -86,7 +86,7 @@ class NavOneAlter extends Component<{}, MyState> {
               <Link href="/">
                 <a className="navbar-brand">
                   <img
-                    src="/assets/images/logo-dark.png"
+                    src="/assets/images/logo.png"
                     className="main-logo"
                     width="128"
                     alt="Awesome Image"

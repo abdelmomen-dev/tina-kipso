@@ -13,7 +13,7 @@
     "fs": "^0.0.1-security",
     "graphql": "^15.5.3",
     "gray-matter": "^4.0.3",
-    "next": "11.1.2",
+    "next": "^12.0.2",
     "next-tinacms-markdown": "^0.50.1",
     "react": "17.0.2",
     "react-countdown": "^2.2.1",

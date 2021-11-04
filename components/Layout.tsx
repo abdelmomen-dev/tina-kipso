@@ -43,6 +43,12 @@ const Layout = ({
           rel="stylesheet"
         />
         <link
+          rel="preload"
+          href="/assets/fonts/MazajBlack.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <link
           rel="stylesheet"
           href="/assets/plugins/bootstrap/bootstrap.min.css"
         />
