@@ -117,16 +117,16 @@ const FooterAlter = () => {
                 <i className="kipso-icon-top-arrow"></i>
               </div>
 
-              <a href="#">
+              <a href="https://twitter.com/yaqeen_edu">
                 <i className="fab fa-twitter"></i>
               </a>
               <a href="#">
                 <i className="fab fa-facebook-square"></i>
               </a>
-              <a href="#">
-                <i className="fab fa-pinterest-p"></i>
+              <a href="https://www.snapchat.com/add/Yaqeen_edu">
+                <i className="fab fa-snapcat"></i>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/yaqeen_edu/">
                 <i className="fab fa-instagram"></i>
               </a>
             </div>
