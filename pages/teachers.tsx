@@ -3,11 +3,11 @@ import { InlineForm } from "react-tinacms-inline";
 import { useForm, usePlugin } from "tinacms";
 import CallToActionTeachers from "../components/CallToActionTeachers";
 import FooterAlter from "../components/FooterAlter";
-import { getTeachersForm } from "../components/forms/forms";
 import Layout from "../components/Layout";
 import NavOneAlter from "../components/NavOneAlter";
 import PageHeader from "../components/PageHeader";
 import TeachersAlter from "../components/TeachersAlter";
+import { getTeachersForm } from "../src/forms/forms";
 
 const TeachersPage = () => {
   const [_, form] = useForm(getTeachersForm());

@@ -3,10 +3,10 @@ import { InlineForm } from "react-tinacms-inline";
 import { useForm, usePlugin } from "tinacms";
 import FaqAlter from "../components/FaqAlter";
 import FooterAlter from "../components/FooterAlter";
-import { getFAQForm } from "../components/forms/forms";
 import Layout from "../components/Layout";
 import NavOneAlter from "../components/NavOneAlter";
 import PageHeader from "../components/PageHeader";
+import { getFAQForm } from "../src/forms/forms";
 
 const FaqPage = () => {
   const [_, form] = useForm(getFAQForm());

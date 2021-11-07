@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CountUp from "react-countup";
+import { InlineText, InlineTextarea } from "react-tinacms-inline";
 import VisibilitySensor from "react-visibility-sensor";
-
 export default function AboutOneAlter() {
   const [startCounter, setStartCounter] = useState(false);
   const onVisibilityChange = (isVisible: boolean) => {
@@ -19,8 +19,7 @@ export default function AboutOneAlter() {
       <div className="container text-center">
         <div className="block-title text-center">
           <h2 className="block-title__title">
-            Let’s do study with <br />
-            expert teachers
+            <InlineTextarea name="tagline" />
           </h2>
         </div>
         <div className="about-one__img">
@@ -61,7 +60,7 @@ export default function AboutOneAlter() {
           velit auctor aliquetn auci elit cons.
         </p>
         <a href="#" className="thm-btn about-one__btn">
-          Start Learning Now
+          <InlineText name="cta_label" focusRing={false} />
         </a>
       </div>
     </section>

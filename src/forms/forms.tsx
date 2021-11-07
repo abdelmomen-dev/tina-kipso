@@ -37,13 +37,16 @@ export const getHomeForm = (mdFile: any) => {
   } as FormOptions<any, any>;
 };
 
-export const getAboutForm = () => {
+export const getAboutForm = (data: any) => {
   const id = "about";
+  // fetch data
   return {
     id,
     label: id,
     initialValues: {
-      title: "من نحن",
+      ...data,
+      tagline: "تعلم مع خبراء التدريب",
+      cta_label: "ابدأ رحلة التعلم",
     },
     fields: [],
     onSubmit: (formState: any) => {

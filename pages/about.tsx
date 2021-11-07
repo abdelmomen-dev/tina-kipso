@@ -3,13 +3,12 @@ import { InlineForm } from "react-tinacms-inline";
 import { useForm, usePlugin } from "tinacms";
 import AboutOneAlter from "../components/AboutOneAlter";
 import FooterAlter from "../components/FooterAlter";
-import { getAboutForm } from "../components/forms/forms";
 import Layout from "../components/Layout";
 import NavOneAlter from "../components/NavOneAlter";
 import PageHeader from "../components/PageHeader";
-import TeamOneAlter from "../components/TeamOneAlter";
-const AboutPage = () => {
-  const [_, form] = useForm(getAboutForm());
+import { getAboutForm } from "../src/forms/forms";
+const AboutPage = ({ data }: any) => {
+  const [_, form] = useForm(getAboutForm(data));
   usePlugin(form);
   return (
     <>
@@ -18,7 +17,6 @@ const AboutPage = () => {
           <NavOneAlter />
           <PageHeader formID={form.id} />
           <AboutOneAlter />
-          <TeamOneAlter />
           <FooterAlter />
         </Layout>
       </InlineForm>
@@ -27,9 +25,12 @@ const AboutPage = () => {
 };
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
+  const resp = await fetch(`https://jsonplaceholder.typicode.com/todos/1`);
+  const data = await resp.json();
+
   return {
     props: {
-      data: null,
+      data: data,
     },
   };
 };

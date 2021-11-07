@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { useContext, useEffect, useState } from "react";
-import { InlineForm, InlineText } from "react-tinacms-inline";
+import { InlineForm } from "react-tinacms-inline";
 import { useForm, usePlugin } from "tinacms";
 import AboutTwoAlter from "../components/AboutTwoAlter";
 import AuthModal from "../components/auth/AuthModal";
@@ -8,7 +8,6 @@ import CountDownAlter from "../components/CountDownAlter";
 import CourseCatAlter from "../components/CourseCatAlter";
 import CourseOne from "../components/CourseOne";
 import FooterAlter from "../components/FooterAlter";
-import { getHomeForm } from "../components/forms/forms";
 import Layout from "../components/Layout";
 import NavOneAlter from "../components/NavOneAlter";
 import SliderOneAlter from "../components/SliderOneAlter";
@@ -16,6 +15,7 @@ import VideoTwoAlter from "../components/VideoTwoAlter";
 import { parseMdFile } from "../helpers/markown";
 import { getAllProducts } from "../helpers/product";
 import { AppContext } from "../src/context/AppContext";
+import { getHomeForm } from "../src/forms/forms";
 import { useSignout } from "../src/hooke/useSignOut";
 
 const Home: NextPage = ({ mdFile }: any) => {
@@ -104,11 +104,6 @@ const Home: NextPage = ({ mdFile }: any) => {
           <CountDownAlter />
           <CourseCatAlter />
           <FooterAlter />
-          <div>
-            <h1 style={{ direction: "rtl" }}>
-              <InlineText name="frontmatter.title" focusRing={false} />
-            </h1>
-          </div>
         </Layout>
       </InlineForm>
     </>

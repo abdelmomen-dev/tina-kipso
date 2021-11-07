@@ -2,13 +2,19 @@ import { useContext, useEffect, useMemo, useState } from "react";
 import { ScreenPlugin, TinaCMS, TinaProvider } from "tinacms";
 import { AppContext } from "./context/AppContext";
 
-const TopDish = () => <span>📡</span>;
-
+const ScreenComponent = () => (
+  <div className="w-full ">
+    <div className="alert alert-primary" role="alert">
+      A simple primary alert—check it out!
+    </div>
+  </div>
+);
+const ScreenIcon = () => <span>🍄</span>;
 const MainScreenPlugin: ScreenPlugin<any> = {
   name: "اعدادات الموقع",
-  Component: () => <h1>Hello اعدادات</h1>,
-  Icon: () => <span>🌁</span>,
-  layout: "popup",
+  Component: ScreenComponent,
+  Icon: ScreenIcon,
+  layout: "fullscreen",
   __type: "screen",
 };
 
@@ -16,7 +22,7 @@ const TopDishWidget = {
   __type: "toolbar:widget",
   name: "howdy",
   weight: 5,
-  component: TopDish,
+  component: ScreenIcon,
 };
 
 export default function TinaWrapper({ children }: any) {
@@ -55,7 +61,7 @@ export default function TinaWrapper({ children }: any) {
       // Currently can't triiger show screen
       console.log(plugin);
     }, 200);
-  }, []);
+  }, [cms.screens]);
   //
   /* Log all events
   cms.events.subscribe("*", (event) => {
