@@ -27,7 +27,7 @@ export default function TinaWrapper({ children }: any) {
   }, [user]);
   const cms = useMemo(() => {
     return new TinaCMS({
-      enabled: process.env.NODE_ENV !== "production" && isAdmin,
+      enabled: isAdmin,
       toolbar: {
         buttons: {
           save: "حفظ",
