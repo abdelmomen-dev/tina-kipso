@@ -12,7 +12,6 @@ import NavOneAlter from "../components/NavOneAlter";
 import SliderOneAlter from "../components/SliderOneAlter";
 import Topbar from "../components/Topbar";
 import VideoTwoAlter from "../components/VideoTwoAlter";
-import { parseMdFile } from "../helpers/markown";
 import { getAllProducts } from "../helpers/product";
 
 const Home: NextPage = ({ mdFile }: any) => {
@@ -61,7 +60,8 @@ const Home: NextPage = ({ mdFile }: any) => {
 const getStaticProps = async () => {
   return {
     props: {
-      mdFile: parseMdFile("pages/home.md"),
+      //mdFile: parseMdFile("pages/home.md"),
+      mdFile: {},
       products: getAllProducts(),
     },
   };

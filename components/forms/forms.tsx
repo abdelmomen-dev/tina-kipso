@@ -2,8 +2,8 @@ import { FormOptions } from "tinacms";
 
 export const getHomeForm = (mdFile: any) => {
   return {
-    id: mdFile.fileName,
-    label: mdFile.fileName,
+    id: mdFile?.fileName,
+    label: mdFile?.fileName,
     initialValues: {
       ...mdFile,
       title: "مع دورات اليقين التدريبية مهمتنا هي زيادة المعرفة للجميع",
